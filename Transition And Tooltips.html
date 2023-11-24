@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition And Tooltips</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: violet;
+            /* 2s = two second  */
+            /* transition: width 2s;  */
+            transition: width 2s,height 3s ,color 2s;
+            /* option :ease  */
+            transition-timing-function:ease-out;
+            transition-delay: 2s;
+        }
+        div:hover{
+            width: 200px;
+            height: 500px;
+            background-image: linear-gradient(#808080,white);
+        }
+    </style>
+</head>
+<body>
+     <!-- Transition  -->
+     <div></div>
+     <!-- by using hover ,it is tooltip -->
+     <p title="Hello Tulsi">Lorem, ipsum dolor.</p>
+</body>
+</html>

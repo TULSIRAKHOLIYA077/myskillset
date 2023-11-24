@@ -1,0 +1,69 @@
+/* we also can give media queries through the javascript  */
+body{
+    background-color: red;
+}
+div{
+    font-size: x-large;
+    text-align: center;
+}
+
+/* media querise na karne div tag html ma use n kryo  */
+
+div::after{
+    content:' Welcome to the Demo';
+}
+@media (max-width : 400px){
+    body{
+        background-color: antiquewhite;
+    }
+    div::after{
+        content: 'very small';
+    }
+
+@media (min-width :400px) and (max-width :768px){
+
+    body{
+        background-color: #808080;
+    }
+    div::after{
+        content: 'Mid size device';
+    }
+}
+
+
+
+
+
+}
+/* @media it is keyword  */
+/* whatever we write in {} it will apply whole the viewpotr of which have min- width 900px  */
+/* if i will decrease the size of browser then it will turned in red color  */
+/* without meta tag (! valo ) it will not apply  */
+/* 3 dots : show media q.  */
+/* to open css in inspect: right click on the strip> strip's link  */
+
+
+
+@media
+ (min-width : 768px) and (max-width :900px)
+{
+    body{
+        background-color: purple;
+    }
+    div::after{
+        content: 'Smaller screen';
+    }
+
+}
+
+@media
+ (min-width : 900px) 
+{
+    body{
+        background-color: aquamarine;
+    }
+    div::after{
+        content: 'Woah its working';
+    }
+
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <script>
+        /*
+        for(let i = 0; i < 34; i++){
+        document.write(i+"<br>");// if log= i+1 then initializ will be 1 not 0 end will be 34 not 33
+    }
+    */
+
+   /* 
+   let n = prompt();
+   n = Number.parseInt(n)
+   let sum = 0;
+   for(let i = 0; i < n; i++){
+    sum +=(i + 1);
+   }
+   document.write(sum);//if n=3:- 1+2+3 = 6// if i write i in do.the result will be none but if i do var at let i=0 the result will be n
+   */
+   
+
+   // for in loop:- 
+   
+   let obj = {
+    harry : 98,
+    shubh : 45,
+    shivika : 56,
+    ritika : 57,
+    shiv : 23
+   }
+   /*
+   for(let a in obj){
+    //document.write(a,"<br>");
+    document.write("Marks of"+ " " + a +"are" + obj[a] + "<br>");
+   }*/// output :-Marks of harryare98
+               //Marks of shubhare45
+               //Marks of shivikaare56
+               //Marks of ritikaare57
+               //Marks of shivare23
+
+
+   
+
+   //for of loop :-
+   
+   for(let b of "Harry"){
+    document.write(b,"<br>");//let b of .... should be string or array
+   }
+   
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same Last Digit</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Please enter a number");
+        let b = prompt("Please enter b number");
+        let c = prompt("Please enter c number");
+
+        let res1 = a % 10;
+        let res2 = b % 10;
+        let res3 = c % 10;
+
+        if(res1 == res2 && res1 == res3){
+            document.write(a+"," + b+"," + c + "are having the same last digit");
+        }
+        else{
+            document.write(a+"," + b+"," + c + "are not having the same last digit");
+         }
+
+
+
+    </script>
+    
+</body>
+</html>

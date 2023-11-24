@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* main  */
+main{
+    width: 100%;
+    height: 100vh;
+}
+main img{
+    width: 100%;
+    height: 100vh;
+}
+main .trans{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267));
+    position: relative;
+    z-index: 1;
+    bottom: 665px;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    bottom: 1320px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a h1{
+    font-size: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    gap: 40px;
+    margin-right: 50px;
+}
+nav ul a li{
+    list-style: none;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+nav ul a:first-child{
+    text-decoration:underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: red;
+    text-underline-offset: 10px;
+}
+nav ul a li:hover{
+    color: red;
+}
+.home-page{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    bottom: 1100px;
+}
+.home-page h1{
+    font-size: 40px;
+}
+.home-page p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.home-page button{
+    color:white;
+    border: 2px solid white;
+    border-radius: 3px;
+    background-image:linear-gradient(rgba(31, 28, 28, 0.041), rgba(31, 28, 28, 0.041)), url("https://altcampus.github.io/encore/assets/media/banner.jpeg");
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.home-page button:hover{
+    background-image: linear-gradient(rgba(238, 9, 9, 0.925), rgba(238, 9, 9, 0.925));
+    border: 2px solid red;
+}
+
+/* section :- campus-info  */
+.campus-info{
+    display: flex;
+    padding: 0 50px 0 70px;
+    gap: 50px;
+    margin-top: 80px;
+}
+.campus-info a{
+    text-decoration: none;
+}
+.info-1{
+    cursor: pointer;
+}
+.info-1 h2{
+    color: #808080;
+    font-size: 17px;
+}
+.event-1{
+    background-color:white;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 1px  rgba(0, 0, 0, 0.979);
+}
+.event-1 img{
+    width: 370px;
+    height: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.event-1 h3{
+    color: black;
+    margin-left: 15px;
+}
+.event-1 p{
+    color: #808080;
+    margin-left: 15px;
+}
+
+.info-2{
+    cursor: pointer;
+}
+.info-2 h2{
+    color: #808080;
+    font-size: 17px;
+}
+.event-2{
+    background-color:white;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 1px  rgba(0, 0, 0, 0.979);
+}
+.event-2 img{
+    width: 370px;
+    height: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.event-2 h3{
+    color: black;
+    margin-left: 15px;
+}
+.event-2 p{
+    color: #808080;
+    margin-left: 15px;
+}
+
+.info-3{
+    cursor: pointer;
+}
+.info-3 h2{
+    color: #808080;
+    font-size: 17px;
+}
+.event-3{
+    background-color:white;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 1px  rgba(0, 0, 0, 0.979);
+}
+.event-3 img{
+    width: 370px;
+    height: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.event-3 h3{
+    color: black;
+    margin-left: 15px;
+}
+.event-3 p{
+    color: #808080;
+    margin-left: 15px;
+}
+
+/* footer  */
+footer{
+    height: 130px;
+    background-color: #0000a0;
+    margin-top: 80px ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer h2{
+    margin-left: 50px;
+    font-weight: 400;
+}
+
+footer ul{
+    display: flex;
+    gap: 40px;
+    margin-right: 50px;
+}
+footer ul a{
+    text-decoration: none;
+}
+footer ul li{
+    list-style: none;
+    color: white;
+    font-weight: 400;
+}
+footer ul li:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+

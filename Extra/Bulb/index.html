@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- font :- poppins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;700;800;900&family=Poppins:wght@500&display=swap" rel="stylesheet">  
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container{
+            width:fit-content ;
+            margin: auto;
+            background-color:rgba(95, 158, 160, 0.623);
+            padding: 20px;
+            text-align: center;
+        }
+        #bulb{
+            font-size: 30px;
+            margin-top: 20px;
+            color:cornsilk;
+        }
+        p{
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .parts{
+            display: flex;
+            gap: 35px;
+        }
+        .battery{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .battery i{
+            font-size: 30px;
+            margin-top: 20px;
+            color:cornsilk;
+        }
+        .battery button{
+            width: fit-content;
+            margin-top: 10px;
+            padding: 8px;
+            font-size: 15px;
+        }
+        .switch{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .switch i{
+            font-size: 30px;
+            margin-top: 20px;
+            color:cornsilk;
+            background-color: crimson;
+            padding: 5px;
+            border-radius: 50%;
+        }
+        .switch button{
+            width: fit-content;
+            margin-top: 10px;
+            padding: 8px;
+            font-size: 15px;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Light the bulb</h1>
+        <i id="bulb" class="fa-solid fa-lightbulb"></i>
+        <p>Bulb is <strong class="bulb-action">off</strong></p>
+        <main class="parts">
+            <div class="battery">
+                <i id="battery-icon" class="fa-solid fa-battery-full"></i>
+                <button class="battery-btn" onclick="funBattery()">Connect</button>
+                <p>Is battery <br> connected? <strong class="battery-action">No.</strong></p>
+            </div>
+            <div class="switch">
+                <i id="switch-icon" class="fa-solid fa-power-off"></i>
+                <button class="switch-btn" onclick="funSwitch()">On</button>
+                <p>Is switch on? <strong class="switch-action">No.</strong></p>
+            </div>
+        </main>
+        
+    </div>
+
+    <script>
+        const bulb = document.querySelector('#bulb');
+        const batteryIcon = document.querySelector('#battery-icon');
+        const switchIcon = document.querySelector('#switch-icon');
+        const bulbAction = document.querySelector('.bulb-action');
+        const batteryAction = document.querySelector('.battery-action');
+        const switchAction = document.querySelector('.switch-action');
+
+        function funSwitch(){
+            const switchBtn = document.querySelector('.switch-btn')
+            if(switchBtn.textContent === 'On'){
+            switchIcon.style.backgroundColor = 'green';
+            switchAction.textContent = 'Yes.';
+            switchBtn.textContent = 'Off';
+            }
+            else{
+            switchIcon.style.backgroundColor = 'crimson';
+            switchAction.textContent = 'No.';
+            switchBtn.textContent = 'On';
+            }
+            check();
+            
+        }
+        function funBattery(){
+            const batteryBtn = document.querySelector('.battery-btn')
+            if(batteryBtn.textContent === 'Connect'){
+            batteryIcon.style.color = 'green';
+            batteryAction.textContent = 'Yes.';
+            batteryBtn.textContent = 'Disconnect';
+            }
+            else{
+            batteryIcon.style.color = 'cornsilk';
+            batteryAction.textContent = 'No.';
+            batteryBtn.textContent = 'Connect';
+            }
+            check();
+        }
+
+        function check(){
+        if((batteryAction.textContent === 'Yes.') && (switchAction.textContent === 'Yes.')){
+            bulb.style.color = 'yellow';
+            bulbAction.textContent = 'on';
+        }
+        else{
+            bulb.style.color = 'cornsilk';
+            bulbAction.textContent = 'off';
+        }
+    }
+    
+
+
+    </script>
+    
+</body>
+</html>

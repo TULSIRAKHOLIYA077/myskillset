@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="name" id="name">
+    <button onclick="greet()">Greet</button>
+    <div class="greet"></div>
+
+    <script>
+        function greet(){
+            let name = document.getElementById("name").value;
+            //alert(name);//i want input's name in alert
+
+            document.getElementsByClassName("greet")[0].textContent = "Hello" + name;
+
+
+        }
+    </script>
+    
+</body>
+</html>

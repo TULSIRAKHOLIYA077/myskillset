@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Starts and And</title>
+</head>
+<body>
+    <script>
+        let string = prompt("Please enter a string");
+        document.write(string+"<br>");
+        let teststart = string.startsWith("w");
+        let testend = string.endsWith("e");
+        if(teststart == true && testend == true){
+            document.write(`${string} starts with w and ends with e`);
+        }else if(teststart == true && testend == false){
+            document.write(`${string} starts with w`);
+        }else if(teststart == false && testend == true){
+            document.write(`${string} ends with e`);
+        }else{
+            document.write(`${string} neither starts with w nor ends with e`);
+        }
+
+    </script>
+</body>
+</html>

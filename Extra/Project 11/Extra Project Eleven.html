@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Party</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: crimson;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+            height: 650px;
+        }
+        section h1{
+            font-size: 55px;
+            color: white;
+        }
+        img{
+            margin-top: 30px;
+        }
+        button{
+            width: fit-content;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding: 25px 80px;
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>LOLCAT CLOCK</h1>
+        <img id="cat" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg" alt="cat"> <br>
+        <button id="button">PARTY TIME!</button>
+        <p>© Skillcrush 2016</p>
+    </section>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

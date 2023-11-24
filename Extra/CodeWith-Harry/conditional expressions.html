@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- i didnot make this extension in .js because prompt,alert are browser's function  -->
+</head>
+<body>
+
+    <script>
+        
+        let a = prompt("Hey whats your age?");
+        a = Number.parseInt(a) ;// converting string into number
+        //console.log(typeof a)
+
+        /*
+        if(a < 9){
+            alert("You are a kid and you cannot even think of driving");
+        }
+        else if(a < 18 && a >= 9){
+            alert("You are a kid and you can think driving after 18 ")
+        }
+        else{
+            alert("This is valid age");
+        }
+        */
+
+        /*
+        // after case you need to put iverted coma if it is abcd
+        switch(true){//it is range-based that is why i used true instead of a.If it was single i could use a
+            case a < 9:
+                alert("You are a kid and you cannot even think of driving");
+                break;  
+            case a < 18 && a >= 9:
+                alert("You are a kid and you can think driving after 18");
+                break;
+            default:
+                alert("This is valid age");
+            }
+            */
+
+           /*
+           document.write("You can",(a < 18? "not drive" :"drive"))
+           */
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Album</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 250px);
+            height: 7000px;
+        }
+        .box{
+             /* height: 100px;
+             width: 100px;  */
+        }
+        .item{
+            /* height: 100px;
+            width: 100px; */
+            margin: 10px;
+        }
+        .box1{
+            display: grid;
+            background-color: red;
+            /* bydoing this the 9th box even exist in hiding mode because of lase height of container */
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px 400px ;
+            grid-template-areas: "header header"
+                                 "content sidebar";
+        }
+        .header{
+            border-style: dashed;
+            border-color: black;
+            grid-area: header;
+            overflow: hidden;
+        }
+        .content{
+            border-style: dashed;
+            border-color: black;
+            grid-area: content;
+            overflow: hidden;
+
+
+        }
+        .sidebar{
+            border-style: dashed;
+            border-color: black;
+            grid-area: sidebar;
+            overflow: hidden;
+
+
+        }
+
+           
+        
+        
+                .box2{
+            background-color: green;
+        }
+                .box3{
+            background-color: yellow;
+        }
+                .box4{
+            background-color: pink;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+                .box5{
+            background-color: brown;
+        }
+                .box6{
+            background-color: purple;
+        }
+                .box7{
+            background-color: violet;
+        }
+                .box8{
+            background-color: yellowgreen;
+        }
+                .box9{
+            background-color: magenta;
+        }
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Grid Album  -->
+    <div class="container">
+        <!-- for giving image : image:s before closing div tag -->
+        <div class="box box1">
+            <div class="item header"><img src="https://images.pexels.com/photos/276502/pexels-photo-276502.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" srcset=""></div>
+
+            <div class="item content"><img src="https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" srcset=""></div>
+
+            <div class="item sidebar"><img src="https://images.pexels.com/photos/3182774/pexels-photo-3182774.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" srcset=""></div>
+
+
+        </div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </div>
+</body>
+</html>

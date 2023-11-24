@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate rental cost</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Car Rental Cost Calculator</h1>
+        <label for="car-type">Car Type :</label>
+        <select name="" id="car-type">
+            <option value="Economy">Economy</option>
+            <option value="Midsize">Midsize</option>
+            <option value="Luxury">Luxury</option>
+        </select> <br> <br>
+        <label for="days">Number of Days :</label>
+        <input type="number" id="days" min="1"> <br> <br>
+        <button onclick="rentalCost()">Calculate Cost</button>
+        <p id="display"></p>
+    </div>
+
+    <script>
+        function rentalCost(){
+            const carType = document.getElementById("car-type").value;
+            const days = document.getElementById("days").value;
+            let cost;
+            if(carType == "Economy"){
+                cost = 4000;
+            }
+            if(carType == "Midsize"){
+                cost = 10000;
+            }
+            if(carType == "Luxury"){
+                cost = 20000;
+            }
+
+            let totalCost = days * cost;
+           
+            document.getElementById("display").textContent = "Total Cost : Rs." + totalCost +"/-" ;
+
+
+
+        }
+    </script>
+    
+</body>
+</html>

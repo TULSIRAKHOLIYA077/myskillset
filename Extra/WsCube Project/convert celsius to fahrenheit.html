@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Celsius to Fahrenheit</title>
+</head>
+<body>
+    <input type="number" name="" id="celsius" step="any">Celsius
+    <button onclick="convert()">Convert</button>
+    <p id="display"></p>
+
+    <script>
+        function convert(){
+            const celsius = document.getElementById("celsius").value;
+
+            document.getElementById("display").textContent = "Fahrenheit :" + ((celsius * 9/5) + 32 ) +" " + "F";
+
+        }
+    </script>
+    
+</body>
+</html>

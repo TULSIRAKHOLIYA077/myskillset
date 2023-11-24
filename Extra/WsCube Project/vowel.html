@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel</title>
+</head>
+<body>
+    <script>
+        let string = prompt("Please enter a string");
+        const reg = /[a,e,i,o,u]/gi;
+        let chars = string.match(reg);
+        document.write(chars.join(','),"<br>");
+        document.write(chars.length);
+
+    </script>
+    
+</body>
+</html>

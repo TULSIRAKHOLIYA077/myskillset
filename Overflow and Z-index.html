@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow and Z-index</title>
+    <style>
+        p{
+            height: 250px;
+            width: 250px;
+            border:2px solid black;
+            /* option : hidden , scroll ,auto */
+            overflow: auto ;
+        }
+        .jim{
+            background-color: #808080;
+            height: 50px;
+            width: 500px;
+        }
+        .one{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            /* option : -1 ,1 .....   */
+         position: relative;
+            z-index: 1;
+
+
+        }
+        .two{
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+            position: relative;
+            bottom: 40px;
+            z-index: 0; 
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Overflow  -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro accusamus sapiente unde modi mollitia. Saepe sequi ullam possimus, blanditiis laborum dolorem maxime nesciunt suscipit maiores quam natus fugit ipsam quae consequuntur voluptates unde necessitatibus, porro voluptate? Laudantium iusto itaque, porro laboriosam molestiae ipsam, repellat earum at repellendus eaque, odio assumenda voluptas aspernatur voluptatum recusandae quia quis quam aut repudiandae dolorem consectetur. Veniam omnis dignissimos corporis mollitia quod magnam cumque exercitationem soluta est, qui doloremque, molestiae accusamus minima id repudiandae atque? Voluptatum possimus quisquam voluptatibus illum unde, ratione sequi deserunt sit delectus ullam dolores, vero qui, non laudantium nisi! Illo, dolorem.</p>
+
+    <!-- Z-index  -->
+<div class="jim">
+    <div class="one"></div>
+    <div class="two"></div>
+</div> 
+<div>p</div>   
+</body>
+</html>

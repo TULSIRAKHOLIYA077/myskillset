@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Highlighting</title>
+    <style>
+        #myParagraph{
+            font-size: 23px;
+            word-spacing: 13px;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="myParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam maiores corporis doloribus numquam explicabo aliquam impedit, totam quo ratione quasi, a facere magnam nam voluptatibus iure nulla id officia? Asperiores soluta illo aperiam itaque ullam sed saepe eveniet eligendi unde tempore, fugiat qui quia neque ipsam ducimus odit tenetur quisquam debitis quibusdam. Neque at porro, impedit velit maiores minus magni, optio saepe numquam atque tempore quaerat repudiandae officia reiciendis. Officiis culpa veritatis, quo beatae nobis reprehenderit dicta quaerat nulla inventore, iste eum repudiandae repellat consectetur impedit! Voluptatibus culpa dolorum laudantium unde laborum. Asperiores quaerat odit illum id tenetur alias accusamus.</p>
+
+    <script>
+        var paragraph = document.getElementById('myParagraph');
+        var words = paragraph.textContent.split(' ');
+
+        for (var i = 0; i < words.length; i++) {
+            if (words[i].length > 8) {
+            var span = document.createElement('span');
+            span.textContent = words[i];
+            span.style.backgroundColor = 'yellow';
+            words[i] = span.outerHTML;
+        }
+    }
+
+    paragraph.innerHTML = words.join(' ');
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- step : any :- we can put also decimal   -->
+    <input type="number" name="first" id="first" step="any">
+    <select name="" id="ope">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" name="second" id="second" step="any">
+    <br> <br>
+    <button onclick="calculate()" >Calculate</button> <br><br>
+    <input type="text" id="result" >
+
+    <script>
+        function calculate(){
+            const firstInput = document.getElementById("first").value;
+            const secondInput = document.getElementById("second").value;
+            const ope = document.getElementById("ope").value;
+            const result = document.getElementById("result");
+
+            let res; // or  var res = parseInt(firstInput) + parseInt(secondInput);
+
+            if(ope === "+"){
+                res = parseInt(firstInput) + parseInt(secondInput);
+            }
+            if(ope === "-"){
+                res = parseInt(firstInput) - parseInt(secondInput);
+            }
+            if(ope === "*"){
+                res = parseInt(firstInput) * parseInt(secondInput);
+            }
+            if(ope === "/"){
+                res = parseInt(firstInput) / parseInt(secondInput);
+            }
+
+            result.value = res;
+
+        }
+    </script>
+    
+</body>
+</html>

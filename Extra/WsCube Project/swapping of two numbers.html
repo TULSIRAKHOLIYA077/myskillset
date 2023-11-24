@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping of Two Numbers</title>
+</head>
+<body>
+    <script>
+        //by using Temporary variable
+        /*
+        let a = prompt("Please enter the a value");
+        let b = prompt("Please enter the b value");
+        document.write("The value of a is :" + a + "," + "The value of b is :" + b);
+        temp = a;
+        a = b;
+        b = temp;
+        document.write("After swapping :-"+"The value of a is :" + a + "," + "The value of b is :" + b);
+        */
+
+        //without using Temporary variable
+        let a =parseInt(prompt("Please enter the a value"));
+        let b =parseInt(prompt("Please enter the b value"));
+        document.write("The value of a is :" + a + "," + "The value of b is :" + b);
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        document.write("The value of a is :" + a + "," + "The value of b is :" + b);
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

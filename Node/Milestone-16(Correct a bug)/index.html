@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Correct a Bug</title>
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+    }
+    #display{
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>Fix Cart Quantity Bug</h1>
+  <button onclick="funFixCart()">Fix Cart</button>
+  <p id="display"></p>
+
+  <script>
+          const cart = [2,3,5,8,10];
+
+    function funFixCart(){
+
+      for(var i = 0; i < cart.length; i++){
+        cart[i] *= 2;
+      }
+      document.getElementById("display").textContent = "Cart Quantity :" + cart.join(",");
+
+    }
+
+  </script>
+  
+</body>
+</html>

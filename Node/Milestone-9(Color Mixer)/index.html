@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Mixer </title>
+  <!-- font :- poppins  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;700;800;900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  
+
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+    h1 {
+      text-align: center;
+      font-size: 50px;
+    }
+    label {
+      font-size: 20px;
+    }
+    input {
+      margin: 20px 30px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Color Mixer</h1>
+  <label for="color1">Color 1:</label>
+  <input type="text" id="color1">
+
+  <label for="color2">Color 2:</label>
+  <input type="text" id="color2">
+
+  <button onclick="mixColor()">Mix Color</button>
+
+  <p id="display"></p>
+
+  <script>
+    function mixColor() {
+      const color1 = document.getElementById("color1").value.toLowerCase();
+      const color2 = document.getElementById("color2").value.toLowerCase();
+
+      let display;
+
+      switch (color1) {
+        case "red":
+          switch (color2) {
+            case "blue":
+              display = "purple";
+              break;
+            case "yellow":
+              display = "orange";
+              break;
+            default:
+              display = "Invalid color combination";
+          }
+          break;
+
+        case "blue":
+          switch (color2) {
+            case "yellow":
+              display = "green";
+              break;
+            case "red":
+              display = "purple";
+              break;
+            default:
+              display = "Invalid color combination";
+          }
+          break;
+
+        case "yellow":
+          switch (color2) {
+            case "red":
+              display = "orange";
+              break;
+            case "blue":
+              display = "green";
+              break;
+            default:
+              display = "Invalid color combination";
+          }
+          break;
+
+        default:
+          display = "Invalid color combination";
+      }
+
+      document.getElementById("display").textContent = display;
+    }
+  </script>
+
+  
+</body>
+</html>

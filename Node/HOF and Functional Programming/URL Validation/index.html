@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Validator</title>
+    <!-- font :- poppins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;700;800;900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    
+    <style>
+        *{
+            font-family:  sans-serif;
+        }
+        body{
+            background-color: aliceblue;
+        }
+        h2{
+            text-align: center;
+        }
+        div{
+            background-color: white;
+            width:70%;
+            margin: auto;
+            padding: 20px;
+        }
+        input{
+            width: 100%;
+            padding: 6px 0 6px 10px;
+            font-size: 20px;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            display: block;
+            margin: auto;
+            padding: 10px 15px;
+            background-color: rgb(79, 79, 219);
+            color: white;
+            border: none;
+        }
+        #instruction{
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h2>URL Validator</h2>
+    <div>
+        <p>Enter a URL:</p>
+        <input id="site" type="url" placeholder="http://example.com"> <br> <br>
+        <button id="validator" onclick="funValidator()">Validate URL</button>
+        <P id="instruction"></P>
+    </div>
+
+    <script>
+        function funValidator(){
+            const site = document.querySelector('#site').value;
+            const instruction = document.querySelector('#instruction');
+
+            let regexThree = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
+
+            const result = regexThree.test(site);
+
+            if(result === true){
+                instruction.innerHTML = 'Valid LinkedIn profile URL';
+            }
+            else{
+                instruction.innerHTML = "Invalid LinkedIn profile URL. You must follow Linkedin profile URL's formula. ";
+            }
+
+        }
+    </script>
+</body>
+</html>

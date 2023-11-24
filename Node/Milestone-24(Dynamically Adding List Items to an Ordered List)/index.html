@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamically Adding List Items to an Ordered List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        li{
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Course Details</h1>
+    <h2>What you'll Learn :</h2>
+    <ol id="listcontainer"></ol>
+    <button onclick="addListItem()">List Item</button>
+
+    <script>
+        const list = ['HTML and Semantics','Starting with CSS','Working Template','Mobile responsive webpages','Grid and Flex-box in CSS','Projects using HTML & CSS','Version Control and Git','Getting Started with JavaScript','Advance JavaScript','Working with DOM','Making Projects using HTML, CSS and JavaScript','Understanding Fundamental of Computer Science','Getting Started with Database','Understanding the Database','Starting with NodeJS and Express','Understanding React and its Fundamentals','Understanding Hooks and Routers','Starting and Completing Full Fledge Projects'];
+
+        let countinueNumber = 0;
+
+        function addListItem(){
+            const listContainer = document.getElementById("listcontainer");
+
+            if(countinueNumber < list.length ){
+                const listItem = document.createElement("li");
+                listItem.textContent = list[countinueNumber];
+                countinueNumber++;
+                listContainer.appendChild(listItem);
+            }else{
+                alert("All items have been edded. ");
+            }
+        }
+    </script>
+    
+</body>
+</html>

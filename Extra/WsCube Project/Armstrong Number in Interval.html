@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number in Interval</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Please enter lower Number");
+        let b = prompt("Please enter upper Number");
+        for(var  i=a; i<=b; i++){
+            var temp = i;
+            var noOfDigits = i.toString().length;
+            var sum = 0 ;
+            while(temp > 0){
+                var digit = temp%10;
+                
+                temp = parseInt(temp/10);
+                sum += digit**noOfDigits;
+                
+                
+            }
+            if(sum == i){
+                document.write(i,",<br>");
+            }
+
+
+            
+
+        }
+    </script>
+    
+</body>
+</html>

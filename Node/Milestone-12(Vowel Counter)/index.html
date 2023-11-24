@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel Counter</title>
+    <!-- font :- poppins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;700;800;900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        div{
+            margin-top: 30px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div>
+        <h1>Vowel Counter</h1>
+        <label for="name" >  Enter your name :</label>
+        <input type="text" id="name" name="username">
+        <button onclick="funVowel()">Count Vowels</button>
+        <p id="display"></p>
+    </div>
+
+    <script>
+
+        function funVowel(){
+            const nameInput = document.getElementById("name").value;
+        const displaySpace = document.getElementById("display");
+
+            var vowelCount = 0;
+            var vowels = ['a','e','i','o','u','A','E','I','O','U'];
+            for(var i=0; i<nameInput.length; i++){
+                var character = nameInput[i];
+                if(vowels.includes(character)){
+                    vowelCount++;
+                }
+            }
+            displaySpace.textContent = "Number of Vowels in the name :" + vowelCount;
+
+        }
+
+    </script>
+    
+</body>
+</html>
