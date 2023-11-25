@@ -39,11 +39,16 @@ function funColors(color){
     const cols = document.querySelectorAll('.character-center .col');
     const allI = document.querySelectorAll('.character-center .col i');
     const allA = document.querySelectorAll('.character-center .col a');
+    const breakerLine = document.querySelector('.breakerline');
+    const breaker = document.querySelector('.breaker');
+
 
 
     header.style.backgroundColor = color;
     home.style.backgroundColor = color;
     aboutPage.style.backgroundColor = color;
+    breakerLine.style.color = color;
+    breaker.style.backgroundColor = color;
 
 
     cols.forEach(col => {
