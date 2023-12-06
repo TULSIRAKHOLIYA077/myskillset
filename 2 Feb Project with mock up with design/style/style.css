@@ -64,7 +64,6 @@ ul{
 .hero-section-right div {
     margin-bottom: 20px;
 }
- /* > means wihout parent tag  */
 .hero-section-right > img{
     width: 64%;
 }

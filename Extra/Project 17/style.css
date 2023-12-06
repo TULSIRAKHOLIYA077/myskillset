@@ -512,10 +512,10 @@ nav .nav-down i:hover{
 }
 .products-head .products-head-line{
     background-color: #D7D7D7;
-    width: 315px;
+    width: 310px;
     height: 4.5px;
     border-radius: 15px;
-    margin: 10px 0 0 30px;
+    margin: 25.5px 0 0 0;
     position: relative;
     z-index: 1;
 }

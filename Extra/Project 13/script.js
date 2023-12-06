@@ -1,12 +1,10 @@
 var aElements = document.querySelectorAll(".icons a");
 
-// Iterate through each <a> element
 for (var i = 0; i < aElements.length; i++) {
     var a = aElements[i];
     var b = a.querySelector("i");
     var c = a.querySelector("p");
   
-    // Add event listeners or apply other modifications
     a.addEventListener("mouseenter", function() {
       addBorder(this);
     });

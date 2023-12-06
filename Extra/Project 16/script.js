@@ -17,7 +17,7 @@ function showMenu() {
     const container = document.querySelector('#opt-menu');
     container.appendChild(newList);
 
-    close.style.display = 'block'; // Set display property to block
+    close.style.display = 'block'; 
 }
 
 function removeList(){

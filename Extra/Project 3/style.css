@@ -60,7 +60,6 @@ img{
 .navitem-1{
     margin-left: 100px;
     color: black;
-    /* overfloe will be hidden  */
     all: initial;
     margin-left: 100px;
     border-top: 1px solid #c0c0c0;
@@ -249,23 +248,10 @@ form{
                         "arrival departure area area"
                         "room how-many-room area area"
                         "adult how-many-child area area";
-                        /* ". btn btn ."; */
     column-gap: 25px;
     row-gap: 25px;
     margin:80px 0 80px 140px ;
 }
-/* .form-list input{
-    width:220px;
-    height: 40px;
-}
-.form-list select{
-    width:220px;
-    height: 40px;
-}
-.form-list textarea{
-    width: 440px;
-    height: 160px;
-} */
 .first-name{
     grid-area: first-name;
 }
@@ -413,49 +399,4 @@ form button{
 .foot-second-out-pera span{
     color: #c71550;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
