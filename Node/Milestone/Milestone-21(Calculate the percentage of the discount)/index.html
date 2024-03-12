@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate the percentage of the discount</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        #display{
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Discount Calculator</h1>
+    <label for="org-price">Original Price :</label>
+    <input type="number" id="org-price" step="any">
+    <label for="discounted-price">Discounted Price :</label>
+    <input type="number" id="discounted-price" step="any">
+    <button onclick="discount()">Calculate Discount</button>
+    <p id="display"></p>
+
+    <script>
+        const discount = () => {
+            const orgPrice = document.getElementById("org-price").value;
+            const discountPrice = document.getElementById("discounted-price").value;
+
+            const result = ((orgPrice - discountPrice) / orgPrice) * 100;
+
+            document.getElementById("display").textContent = "Discount Percentage :" +result.toFixed(2) + "%";
+        }
+    </script>
+
+    
+</body>
+</html>

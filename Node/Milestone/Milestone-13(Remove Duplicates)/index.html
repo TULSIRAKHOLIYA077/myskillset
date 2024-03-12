@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Duplicates</title>
+    <!-- font :- poppins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;700;800;900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        ul{
+            list-style: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Remove Duplicates Items from the Cart</h1>
+    <h2>Customer's Cart</h2>
+    <ul id="old-cart">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 3</li>
+        <li>Item 2</li>
+    </ul>
+    <button onclick="funCart()">Remove Duplicates</button>
+    <h2>Updated cart</h2>
+    <ul id="Updated-cart"></ul>
+
+    <script>
+        function funCart(){
+            const oldCart = document.getElementById("old-cart");
+            const updatedCart = document.getElementById("Updated-cart");
+
+            const updatItems = [];
+            const oldItems = {};
+            for(var i=0; i<oldCart.children.length; i++){
+                var item = oldCart.children[i].textContent;
+
+                if(!oldItems[item]){
+                    updatItems.push(item);
+                    oldItems[item]=true;
+                }
+            }
+            updatedCart.textContent = "";
+
+            for(var j=0; j<updatItems.length; j++){
+                var listItem = document.createElement("li");
+                listItem.textContent = updatItems[j];
+                updatedCart.appendChild(listItem);
+
+            }
+
+        }
+    </script>
+</body>
+</html>

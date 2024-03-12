@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the color on click</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        div{
+            margin: auto;
+            width:450px ;
+            padding-top: 30px;
+        }
+        
+        button{
+            margin: auto;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Change Background Color</h1>
+        <button onclick="changeColor()">Change Color</button>
+    </div>
+
+    <script>
+        const colors = ['#9400D3','#4B0082','#002550','#30ED30','#FFFF00','#FF7F00','#FF0000'];
+         
+        function changeColor(){
+            const randomcolor = Math.floor(Math.random() * colors.length );
+            const display = colors[randomcolor];
+            document.body.style.backgroundColor = display;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highest Marks</title>
+  <!-- font :- poppins  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;700;800;900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    
+  <style>
+    *{
+      font-family: 'Poppins', sans-serif;
+    }
+    h1{
+      font-size: 40px;
+      text-align: center;
+    }
+    p{
+      margin-top: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Highest Marks</h1>
+  <p id="display"></p>
+
+  <script>
+    window.onload = function(){
+
+    const marks = [60,75,80,89,93];
+
+    const highestMarks = marks.reduce(function(a,b){
+      return (a>b)? a : b ;
+    });
+     const displayElement = document.getElementById("display");
+     displayElement.textContent = "The highest marks scored by any student is:" + highestMarks;
+
+  }
+  </script>
+  
+</body>
+</html>
