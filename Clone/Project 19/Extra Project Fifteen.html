@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JIM</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- font :- poppins  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;700;800;900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  
+
+</head>
+<body>
+  <nav>
+    <div class="up">
+      <img src="./Assets/logo_new_1.jpg" alt="logo  ">
+      <div class="up-right">
+        <div class="ur-logo">
+          <img src="./Assets/All_India_Council_for_Technical_Education_logo.png" alt="logo">
+          <div class="line"></div>
+          <a href=""><button>AICTE-Mandatory Disclosure</button></a>
+        </div>
+        <div class="ur-list">
+          <ul>
+            <a href=""><li><i class="fa-solid fa-house" style="color: #479c23;"></i>HOME</li></a>
+            <div class="ur-list-1"></div>
+
+            <a href=""><li>ALUMNI</li></a>
+            <div class="ur-list-2"></div>
+
+            <a href=""><li id="list-3" onmouseenter="funList3Add()" onmouseleave="funList3Remove()">JIM ERP</li></a>
+            <span id="display-1"></span>
+            <div class="ur-list-3"></div>
+
+            <a href=""><li id="list-4" onmouseenter="funList4Add()" onmouseleave="funList4Remove()">QUICK LINKS</li></a>
+            <span id="display-2"></span>
+            <div class="ur-list-4"></div>
+
+            <a href=""><li>CONTACT US</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="down">
+      <ul>
+        <a href=""><li id="list-one" onmouseenter="listOneAdd()" onmouseleave="listOneRemove()">ABOUT JIM</li></a>
+        <span id="display-one"></span>
+        <div class="line-1"></div>
+
+        <a href=""><li id="list-two" onmouseenter="listTwoAdd()" onmouseleave="listTwoRemove()">ACADEMIC PROGRAMMES</li></a>
+        <span id="display-two"></span>
+        <div class="line-2"></div>
+
+        <a href=""><li>ADMISSION</li></a>
+        <div class="line-3"></div>
+
+        <a href=""><li id="list-four" onmouseenter="listFourAdd()" onmouseleave="listFourRemove()">FACULTY & STAFF</li></a>
+        <span id="display-four"></span>
+        <div class="line-4"></div>
+
+        <a href=""><li id="list-five" onmouseenter="listFiveAdd()" onmouseleave="listFiveRemove()">FACILITIES & RESOURCES</li></a>
+        <span id="display-five"></span>
+        <div class="line-5"></div>
+
+        <a href=""><li id="list-six" onmouseenter="listSixAdd()" onmouseleave="listSixRemove()">STUDENTS ACTIVITIES</li></a>
+        <span id="display-six"></span>
+        <div class="line-6"></div>
+
+        <a href=""><li id="list-seven" onmouseenter="listSevenAdd()" onmouseleave="listSevenRemove()">TRAINING & PLACEMENTS</li></a>
+        <span id="display-seven"></span>
+        <div class="line-7"></div>
+
+        <a href=""><li id="list-eight" onmouseenter="listEightAdd()" onmouseleave="listEightRemove()">LIFE @ JIM</li></a>
+        <span id="display-eight"></span>
+        <div class="line-8"></div>
+
+        <a href=""><li>NEWSLETTER</li></a>
+        <div class="line-9"></div>
+
+        <a href=""><li>AICTE</li></a>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="img">
+    <img src="./Assets/T_2207061306241657092984.jpg" alt="campus">
+  </section>
+
+  <section class="about-campus">
+    <div class="about-all">
+      <div class="about-left">
+        <h3 id="title">GREEN CAMPUS</h3>
+        <h1 id="heading">JIM is a sustainable green campus with a more dynamic <br> ambience that energizes the students with positive vibes.</h1>  
+        <p id="pera">JIM is a sustainable green campus with a more dynamic ambience that energizes the <br> students with positive vibes.</p>
+      </div>
+      <div class="center"></div>
+      <div class="about-right">
+        <a href=""><button>CLICK HERE</button></a>
+      </div>
+    </div>
+    <div class="radio-btn">
+      <input type="radio" name="radio" id="rb-1" onclick="funRadio1()">
+      <input type="radio" name="radio" id="rb-2" onclick="funRadio2()">
+      <input type="radio" name="radio" id="rb-3" onclick="funRadio3()">
+      <input type="radio" name="radio" id="rb-4" onclick="funRadio4()">
+      <input type="radio" name="radio" id="rb-5" onclick="funRadio5()">
+      <input type="radio" name="radio" id="rb-6" onclick="funRadio6()">
+    </div>
+  </section>
+
+  <section class="message">
+    <div class="msj-left">
+      <h1>DIRECTOR'S MESSAGE</h1>
+      <p>I am happy to meet you with this message. St. Joseph's Institute of Management (JIM) is a place of learning. It aims at forming men and women of Character, Commitment and Compassion. The students learn through practical methods like case study, problem solving and co-curricular activities. Managers from the industry are invited periodically to share their expertise with the students.</p>
+      <a href=""><button>know more</button></a>
+    </div>
+    <img src="./Assets/Director.jpg" alt="male">
+  </section>
+
+  <section class="about-Courses">
+    <div class="Courses-left">
+      <h1>CAMPUS LIFE</h1>
+      <h3><i class="fa-solid fa-landmark-dome"></i>Life <span>@JIM</span></h3>
+      <p>Welcome to a campus that gives you experience and memories to cherish down your memory lane. <br>
+      <a href=""> View More<i class="fa-solid fa-right-long"></i></a></p>
+      <div class="horizontal-line"></div>
+      <h3><i class="fa-solid fa-book-open"></i>LIBRARY</h3>
+      <P>The Learning Resource Centre of St. Joseph's  Institute of Management plays very  important & vital role in all academic &  research activities. <br>      <a href="">View More<i class="fa-solid fa-right-long"></i></a> <br>
+      </P>
+      <a href=""><button>View Scholarships</button></a>
+      <div class="highlight-1">
+        <h2><i class="fa-brands fa-twitter"></i>Twitter</h2>
+        <p>Rev. Dr. P. Paulraj SJ, Director, JIM addressing faculty on social distancing norms to be followed for the academic ye…</p>
+        <a href=""><p>https://twitter.com/jimtrichy</p></a>
+      </div>
+      <div class="jim">
+        <h1>JIM @ Trichy</h1>
+        <img src="./Assets/insta-1.jpg" alt="instagram"> <br>
+        <a href=""><button><i class="fa-brands fa-instagram"></i>Follow on Instagram</button></a>
+      </div>
+      <div class="highlight-2">
+        <h1>INTERNATIONAL RELATIONS</h1>
+        <img src="./Assets/inter_rele.jpg" alt="male"> <br>
+        <a href=""><button>Read More</button></a>
+      </div>
+    </div>
+
+    <div class="Courses-right">
+      <div class="Courses">
+        <h1>Our Courses</h1>
+        <div class="Courses-three">
+          <div class="Courses-1">
+            <img src="./Assets/C-1.jpg" alt="students"> <br>
+            <a href=""><button>MBA PROGRAMME</button></a>
+          </div>
+          <div class="Courses-2">
+            <img src="./Assets/C-2.jpg" alt="students"> <br>
+            <a href=""><button>CERTIFICATE PROGRAMME</button></a>
+          </div>
+          <div class="Courses-3">
+            <img src="./Assets/C-3.jpg" alt="students"> <br>
+            <a href=""><button>DOCTORAL PROGRAMME</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="events">
+        <h1>JIM EVENTS</h1>
+        <div class="events-bg">
+          <div class="event-1">
+            <img src="./Assets/Screenshot (48).png" alt="placement">
+            <a href=""><h3>2023-03-10</h3></a>
+            <a href=""><h2>PLACEMENT...</h2></a>
+            <P><i class="fa-solid fa-clock"></i>9:00am <br><i class="fa-solid fa-location-dot"></i>JIM</P>
+            <a href=""><p>Join Event / View<i class="fa-solid fa-right-long"></i></p></a>
+          </div>
+          <div class="event-2">
+            <a href=""><h3>2023-03-10</h3></a>
+            <a href=""><h2>PLACEMENT...</h2></a>
+            <P><i class="fa-solid fa-clock"></i>9:00am <br><i class="fa-solid fa-location-dot"></i>JIM</P>
+            <a href=""><p>Join Event / View<i class="fa-solid fa-right-long"></i></p></a>
+            <img src="./Assets/Screenshot (49).png" alt="placement">
+          </div>
+          <div class="event-3">
+            <img src="./Assets/Screenshot (50).png" alt="placement">
+            <a href=""><h3>2023-03-10</h3></a>
+            <a href=""><h2>XCHANGE...</h2></a>
+            <P><i class="fa-solid fa-clock"></i>9:00am <br><i class="fa-solid fa-location-dot"></i>JIM</P>
+            <a href=""><p>Join Event / View<i class="fa-solid fa-right-long"></i></p></a>
+          </div>
+        </div>
+      </div>
+      <div class="photo">
+        <h1>GALLERY</h1> 
+        <div class="container">
+          <img class="portfolio-1" src="./Assets/portfolio-1.jpg" alt="event">
+          <img class="portfolio-2" src="./Assets/portfolio-2.jpg" alt="event">
+          <img class="portfolio-3" src="./Assets/portfolio-3.jpg" alt="event">
+          <img class="portfolio-6" src="./Assets/portfolio-6.jpg" alt="event">
+          <img class="portfolio-5" src="./Assets/portfolio-5.jpg" alt="event">
+          <img class="portfolio-9" src="./Assets/portfolio-9.jpg" alt="event">
+          <img class="portfolio-4" src="./Assets/portfolio-4.jpg" alt="event">
+          <img class="portfolio-7" src="./Assets/portfolio-7.jpg" alt="event">
+          <img class="portfolio-8" src="./Assets/portfolio-8.jpg" alt="event">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <iframe src="https://www.youtube.com/embed/oVXc8kTuvQg" frameborder="0"></iframe>
+  </section>
+  
+  <section class="end">
+      <div class="info">
+        <img src="https://images.pexels.com/photos/11789834/pexels-photo-11789834.jpeg?auto=compress&cs=tinysrgb&" alt="institute">
+        <div class="overlay"></div>
+        <img src="./Assets/foot_logo_2.png" alt="logo">
+        <div class="info-right">
+          <ul>
+            <li>Useful Links</li>
+            <li><i class="fa-solid fa-angle-right"></i><a href=""> About JIM </a></li>
+            <li><i class="fa-solid fa-angle-right"></i><a href="">Programmes and Events</a></li>
+            <li><i class="fa-solid fa-angle-right"></i><a href="">Alumni</a></li>
+            <li><i class="fa-solid fa-angle-right"></i><a href="">Placement</a></li>
+          </ul>
+          <div class="inputt">
+          <p><i class="fa-solid fa-house"></i> <br>
+          St. Joseph's Institute of Management (JIM) <br>
+          St. Joseph's College (Autonomous) <br>
+          Tiruchirappalli - 620 002 <br>
+          Tamil Nadu, India. <br> <br>
+          <i class="fa-solid fa-phone"></i> +91 431 422 6481 | +91-8300831283 <br>
+          <i class="fa-solid fa-envelope"></i> info@jim.ac.in 
+          <h3>Join Our Newsletter</h3> <span>Get the Latest News, Events or Notifications in your <br> inbox!</span> <br>
+          <form action="">
+          <input type="email" id="email" name="email" placeholder="Write your email id" >
+          <button type="submit">Subscribe</button>
+          </form>
+          </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <footer>
+    <p>© Copyright JIM. All Rights Reserved. Designed by JIM</p>
+    <div class="socials">
+      <a href=""><i class="fa-brands fa-twitter" style="color:#1892E8 ;" ></i></a>
+      <a href=""><i class="fa-brands fa-square-facebook" style="color: #335599;"></i></a>
+      <a href=""><i class="fa-brands fa-instagram" style="color:#753064 ;"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin" style="color: #0077AA;"></i></a>
+      <a href=""><i class="fa-brands fa-youtube" style="color: #CC3333;"></i></a>
+    </div>
+  </footer>
+  
+  <script src="./script.js"></script>
+</body>
+</html>

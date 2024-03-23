@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+    <!-- font :- poppins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;700;800;900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <a href="./Extra Project Sixteen.html"><img src="./Assets/white-logo.png" alt="logo"></a>
+        <ul class="option">
+            <a href=""><li class="opt-1">Home</li></a>
+            <a href=""><li>Services</li></a>
+            <a href=""><li>Portfolio</li></a>
+            <a href=""><li>Pricing</li></a>
+            <a href=""><li>Team</li></a>
+            <a href=""><li>Contact</li></a>
+        </ul>
+        <i id="menu" class="fa-solid fa-bars"></i>
+        <i id="close" onclick="removeList()" class="fa-solid fa-xmark"></i>
+        <span id="opt-menu"></span>
+
+    </nav>
+
+    <section class="home-page">
+        <div class="home-page-left">
+            <h1>Corporate & Business <br> Site Template By Ayro UI.</h1>
+            <P class="pera">We are a digital agency that helps brands to achieve their business <br> outcomes. We see technology as a tool to create amazing things.</P>
+            <div class="video-link">
+                <a href=""><button>GET STARTED</button></a>
+                <a href="https://youtu.be/r44RKWyfcFw"><i class="fa-regular fa-circle-play"></i> <p>Watch Intro</p></a>
+            </div>
+        </div>
+        <img src="./Assets/hero-image.jpg" alt="female">
+    </section>
+
+    <section class="story">
+        <div class="story-left">
+            <img src="./Assets/about-img1.jpg" alt="pc">
+        </div>
+        <div class="story-right">
+            <h3><span>-</span>OUR STORY</h3>
+            <h1>Our team comes with the experience and knowledge</h1>
+            <div class="btns">
+                <span><button>Who We Are</button></span>
+                <button>Our Vision</button>
+                <button>Our History</button>
+            </div>
+            <p>It is a long established fact that a reader     will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English. <br><br>
+                There are many variations of passages of Lorem Ipsum available, but the majority have in some form, by injected humour.</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services-head">
+            <h4>Services</h4>
+            <h1>Our Best Services</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but  the majority have suffered alteration in some form.</p>
+        </div>
+        <div class="services-info">
+            <div class="info-1">
+                <i class="fa-solid fa-capsules"></i>
+                <h3>Refreshing Design</h3>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+            <div class="info-2">
+                <i class="fa-solid fa-b"></i>                <h3>Solid Bootstrap 5</h3>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+            <div class="info-3">
+                <h2>< s ></h2>                
+                <h3>100+ Components</h3>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+            <div class="info-4">
+                <i class="fa-solid fa-gauge"></i>                
+                <h3>Speed Optimized</h3>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+            <div class="info-5">
+                <i class="fa-solid fa-layer-group"></i>                
+                <h3>Fully Customizable</h3>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+            <div class="info-6">
+                <i class="fa-solid fa-rotate"></i>              
+                <h3>Regular Updates</h3>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo">
+        <div class="promo-head">
+            <h4>Our Intro Video</h4>
+            <h1>Watch Our Promo Video</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but  the majority have suffered alteration in some form.</p>
+        </div>
+        <div class="promo-info">
+            <img src="./Assets/video-bg.png" alt="image">
+            <a href="https://youtu.be/r44RKWyfcFw"><i class="fa-solid fa-play"></i></a>
+        </div>
+    </section>
+
+    <section class="work">
+        <div class="work-head">
+            <h4>Our Portfolio</h4>
+            <h1>Our Recent Works</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but  the majority have suffered alteration in some form.</p>
+        </div>
+        <ul>
+            <li class="all-work" onclick="allWork()">ALL WORK</li>
+            <li onclick="brand()">BRANDING</li>
+            <li onclick="market()">MARKETING</li>
+            <li onclick="plan()">PLANNING</li>
+            <li onclick="research()">RESEARCH</li>
+        </ul>
+        <div id="work-info">
+            <div id="work-1">  
+                <div class="img-container">
+                    <a href="https://demo.ayroui.com/templates/business-template/assets/images/portfolio/pf1.jpg"><i id="glass" class="fa-solid fa-magnifying-glass-plus"></i></a>          
+                    <img src="./Assets/pf1.jpg" alt="image">
+                </div>
+                <h2>Graphics Design</h2>
+                <p>Short description for the ones who look for something new. Awesome!</p>
+            </div>
+            <div id="work-2">            
+                <div class="img-container">
+                    <a href="https://demo.ayroui.com/templates/business-template/assets/images/portfolio/pf2.jpg"><i id="glass" class="fa-solid fa-magnifying-glass-plus"></i></a>          
+                    <img src="./Assets/pf2.jpg" alt="image">
+                </div>
+                <h2>Web Development</h2>
+                <p>Short description for the ones who look for something new. Awesome!</p>
+            </div>
+            <div id="work-3">            
+                <div class="img-container">
+                    <a href="https://demo.ayroui.com/templates/business-template/assets/images/portfolio/pf3.jpg"><i id="glass" class="fa-solid fa-magnifying-glass-plus"></i></a>          
+                    <img src="./Assets/pf3.jpg" alt="image">
+                </div>
+                <h2>App Development</h2>
+                <p>Short description for the ones who look for something new. Awesome!</p>
+            </div>
+            <div id="work-4">            
+                <div class="img-container">
+                    <a href="https://demo.ayroui.com/templates/business-template/assets/images/portfolio/pf4.jpg"><i id="glass" class="fa-solid fa-magnifying-glass-plus"></i></a>          
+                    <img src="./Assets/pf4.jpg" alt="image">
+                </div>
+                <h2>Digital Marketing</h2>
+                <p>Short description for the ones who look for something new. Awesome!</p>
+            </div>
+            <div id="work-5">            
+                <div class="img-container">
+                    <a href="https://demo.ayroui.com/templates/business-template/assets/images/portfolio/pf5.jpg"><i id="glass" class="fa-solid fa-magnifying-glass-plus"></i></a>          
+                    <img src="./Assets/pf5.jpg" alt="image">
+                </div>
+                <h2>SEO Services</h2>
+                <p>Short description for the ones who look for something new. Awesome!</p>
+            </div>
+            <div id="work-6">            
+                <div class="img-container">
+                    <a href="https://demo.ayroui.com/templates/business-template/assets/images/portfolio/pf6.jpg"><i id="glass" class="fa-solid fa-magnifying-glass-plus"></i></a>          
+                    <img src="./Assets/pf6.jpg" alt="image">
+                </div>
+                <h2>Product Design</h2>
+                <p>Short description for the ones who look for something new. Awesome!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards-head">
+            <h4>Pricing</h4>
+            <h1>Pricing & Plans</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but  the majority have suffered alteration in some form.</p>
+        </div>
+        <div class="cards-info">
+            <div class="card-1">
+                <h4>starter</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
+                <p class="number"><sup>$</sup><span>0</span><sub>/mo</sub></p>
+                <a href=""><button>START FREE TRIAL</button></a>
+                <ul>
+                    <li>Cras justo odio.</li>
+                    <li>Dapibus ac facilisis in.</li>
+                    <span><li>Morbi leo risus.</li></span>
+                    <span><li>Excepteur sint occaecat velit.</li></span>
+                </ul>
+            </div>
+            <div class="card-2">
+                <h4>Exclusive</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
+                <p class="number"><sup>$</sup><span>99</span><sub>/mo</sub></p>
+                <a href=""><button>START FREE TRIAL</button></a>
+                <ul>
+                    <li>Cras justo odio.</li>
+                    <li>Dapibus ac facilisis in.</li>
+                    <li>Morbi leo risus.</li>
+                    <span><li>Excepteur sint occaecat velit.</li></span>
+                </ul>
+            </div>
+            <div class="card-3">
+                <h4>Premium</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
+                <p class="number"><sup>$</sup><span>150</span><sub>/mo</sub></p>
+                <a href=""><button>START FREE TRIAL</button></a>
+                <ul>
+                    <li>Cras justo odio.</li>
+                    <li>Dapibus ac facilisis in.</li>
+                    <li>Morbi leo risus.</li>
+                    <li>Excepteur sint occaecat velit.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="team-head">
+            <h4>Our Team</h4>
+            <h1>Our Creative Team</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but  the majority have suffered alteration in some form.</p>
+        </div>
+        <div class="team-info">
+            <div class="member-1">
+                <img src="./Assets/Untitled.png" alt="avtar">
+                <div class="member-name">
+                    <div class="socials">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                    <h2>Jeffery Riley</h2>
+                    <p>Art Director</p>
+                </div>
+            </div>
+            <div class="member-2">
+                <img src="./Assets/images.jpg" alt="avtar">
+                <div class="member-name">
+                    <div class="socials">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <h2>Riley Beata</h2>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+            <div class="member-3">
+                <img src="./Assets/Untitled.png" alt="avtar">
+                <div class="member-name">
+                    <div class="socials">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <h2>Mark Alone</h2>
+                    <p>UX Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="business">
+        <div class="business-pera">
+            <h2>We love to make perfect solutions for your business</h2>
+            <p>Why I say old chap that is, spiffing off his nut cor blimey guvnords geeza bloke knees up bobby, sloshed arse William cack Richard. Bloke fanny around chesed of bum bag old lost the pilot say there spiffing off his nut.</p>
+            <a href=""><button>GET STARTED</button></a>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="testimonials-head">
+            <h4>Customer Reviews</h4>
+            <h1>Our Testimonials</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but  the majority have suffered alteration in some form.</p>
+        </div>
+
+        <div class="testimonials-info">
+                <div id="testimonials-one">
+                    <img src="./Assets/Frame 57.jpg" alt="background">
+                    <div class="testimonials-pera">
+                        <p>On the other hand denoun with righteous and disliks men who are beguiled demorae momentc blinded by desire that can</p>
+                        <h3 id="testimonials-h3-1">Musharof Chowdhury</h3>
+                        <p class="occupation-1">Web Entrepreneur</p>
+                    </div>    
+                </div>
+                <div id="testimonials-two">
+                    <img src="./Assets/Frame 57.jpg" alt="background">
+                    <div class="testimonials-pera">
+                        <p>On the other hand denoun with righteous and disliks men who are beguiled demorae momentc blinded by desire that can</p>
+                        <h3 id="testimonials-h3-2">David Warner</h3>
+                        <p class="occupation-2">Web Developer</p>
+                    </div>    
+                </div>
+        </div>
+        <div id="radio-btn">
+            <div  id="btn-1" onclick="funRadio1()"></div>
+            <div  id="btn-2" onclick="funRadio2()"></div>
+            <div  id="btn-3" onclick="funRadio3()"></div>
+            <div  id="btn-4" onclick="funRadio4()"></div>
+            <div  id="btn-5" onclick="funRadio5()"></div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="news-head">
+            <h4>Latest News</h4>
+            <h1>Latest News & Blog</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but  the majority have suffered alteration in some form.</p>
+        </div>
+
+        <div class="news-info">
+            <div class="news-1">
+                <img src="./Assets/1.jpg" alt="group">
+                <div class="mini-img">
+                    <img src="./Assets/b6.jpg" alt="image">
+                    <p>BY TIM NORTON</p>
+                </div>
+                <h2>Make your team a Design driven company</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                </p>
+            </div>
+            <div class="news-2">
+                <img src="./Assets/2.jpg" alt="group">
+                <div class="mini-img">
+                    <img src="./Assets/b6.jpg" alt="image">
+                    <p>BY TIM NORTON</p>
+                </div>
+                <h2>The newest web framework that changed the world</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                </p>
+            </div>
+            <div class="news-3">
+                <img src="./Assets/hero-image.jpg" alt="group">
+                <div class="mini-img">
+                    <img src="./Assets/b6.jpg" alt="image">
+                    <p>BY TIM NORTON</p>
+                </div>
+                <h2>5 ways to improve user retention for your startup</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients"> 
+        <div class="clients-head">
+            <h4>Meet our Clients</h4>
+            <h1>Our Awesome Clients</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but  the majority have suffered alteration in some form.</p>
+        </div>
+        <div class="clients-info">
+            <div class="img-1"><img src="./Assets/graygrids.png" alt="graygrids"></div>
+            <div class="img-2"><img src="./Assets/uideck.png" alt="uideck"></div>
+            <div class="img-3"><img src="./Assets/ayroui.png" alt="ayroui"></div>
+            <div class="img-4"><img src="./Assets/lineicons.png" alt="lineicons"></div>
+            <div class="img-5"><img src="./Assets/tailwindtemplates.png" alt="tailwindtemplates"></div>
+            <div class="img-6"><img src="./Assets/ecomhtml.png" alt="ecomhtml"></div>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="form-left">
+            <div class="form-info-1">
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <p>0984537278623 <br> yourmail@gmail.com</p>
+                </div>
+            </div>
+            <div class="form-info-2">
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="address">
+                    <h3>Address</h3>
+                    <p>175 5th Ave, New York, NY <br> 10010 <br> United States</p>
+                </div>
+            </div>
+            <div class="form-info-3">
+                <div class="clock">
+                    <i class="fa-solid fa-stopwatch"></i>
+                </div>
+                <div class="schedule">
+                    <h3>Schedule</h3>
+                    <p>24 Hours / 7 Days Open <br> Office time: 10 AM - 5:30 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="form-right">
+            <h3>Get in Touch</h3>
+            <h1>Ready to Get Started</h1>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus  quiblanditiis praesentium</p>
+            <form action="" method="get">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="number" name="number" placeholder="Phone" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" id=""  placeholder="Type Message"></textarea> <br>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43440.81110544109!2d-77.48472866628532!3d38.96313096342714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b64740174eb057%3A0x8e01cb201080601d!2sDulles%20International%20Airport!5e0!3m2!1sen!2sin!4v1691307739498!5m2!1sen!2sin"></iframe>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <a href="./Extra Project Sixteen.html"><img src="./Assets/white-logo.png" alt="logo"></a>
+            <p>Making the world a better place through constructing elegant hierarchies.</p>
+            <p>© 2024 Ayro UI. <br> Designed and Developed by   <a href=""><span>Ayro UI</span></a></p>
+        </div>
+        <div class="list">
+            <ul>
+                <li><h3>Solutions</h3></li>
+                <a href=""><li>Marketing</li></a>
+                <a href=""><li>Analytics</li></a>
+                <a href=""><li>Commerce</li></a>
+                <a href=""><li>Insights</li></a>
+            </ul>
+            <ul>
+                <li><h3>Support</h3></li>
+                <a href=""><li>Pricing</li></a>
+                <a href=""><li>Documentation</li></a>
+                <a href=""><li>Guides</li></a>
+                <a href=""><li>API Status</li></a>
+            </ul>
+        </div>
+        <div class="subscribe">
+            <h3>Subscribe</h3>
+            <p>Subscribe to our newsletter for the latest updates</p>
+            <form action="" method="get">
+                <input type="email" name="email" placeholder="Email address" required>
+                <button type="submit"><i class="fa-solid fa-envelope"></i></button>
+            </form>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
