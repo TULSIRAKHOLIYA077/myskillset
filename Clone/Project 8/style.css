@@ -28,7 +28,7 @@ img{
     height: 70px;
     background-color:white;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     bottom: 588px;
     box-shadow: -13px 13px 13px  rgba(0, 0, 0, 0.1);
 }
