@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-div{
+    background-color:#f0ffff;
+    width: 450px;
+    height: 600px;
+    box-shadow:-5px -5px 5px rgb(255, 255, 255) ,5px 5px 5px rgba(0, 0, 0, 0.1) ;
+    border-radius: 30px;
+}
+.icon-first a i{
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.icon-second a i{
+    float: right;
+    margin-right:25px ;
+    position: relative;
+    bottom: 12px;
+}
+img{
+    width: 160px;
+    height: 160px;
+    margin-left: 140px;
+    margin-top: 20px;
+    border:10px solid #f0ffffd0;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1) , -5px -5px 5px rgb(255, 255, 255 );
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    color:#4e4e4e;
+    margin-top: 15px;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    color:#868686;
+    margin-top: 8px;
+}
+.list-first{
+    display: flex;
+    gap: 20px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.list-first .fb{
+    padding:21px 26px ;
+}
+.list-first li{
+    list-style: none;
+}
+.list-first li button{
+    padding:20px;
+    border: none;
+    box-shadow:3px 3px 3px rgba(0, 0, 0, 0.3) , -3px -3px 3px rgba(255, 255, 255, 0.87) ;
+    border-radius: 50%;
+    background-color: azure;
+}
+.list-first li button i{
+    font-size: 30px;
+}
+.list-second{
+    display: flex;
+    gap: 30px;
+    margin-left: 94px;
+    margin-top: 30px;
+}
+.list-second li{
+    list-style: none;
+}
+.list-second li button{
+    padding: 12px 32px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    box-shadow:3px 3px 3px rgba(0, 0, 0, 0.3) , -3px -3px 3px rgba(255, 255, 255, 0.774) ;
+    border: none;
+    border-radius: 10px;
+    background-color: azure;
+    color: #868686;
+    font-weight: 600;
+}
+.list-third{
+    display: flex;
+    margin-top: 40px;
+    gap: 30px;
+    margin-left:70px;
+}
+.list-third li{
+    list-style: none;
+    font-size: 18px;
+    color: #868686;
+    font-weight:600 ;
+    font-family: 'Poppins', sans-serif;
+}
+.list-third span{
+    margin-left: 13px;
+    font-size: 30px;
+}
+.list-third li i{
+    margin-right: 10px;
+}
+.list-third li:nth-child(3){
+    margin-top: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+

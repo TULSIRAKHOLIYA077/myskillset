@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: cover;
+    font-family: 'Golos Text', sans-serif; 
+    height: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img1.png") ; 
+    width: 100%;
+    overflow:hidden;
+}
+/* header  */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+div{
+    width: 30%;
+    align-items: center;
+    padding-top: 20px;
+}
+div img{
+    width: 25%;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* width: 48%; */
+    padding-top: 10px;
+}
+li{
+    color:#ffff80;
+    list-style: none;
+}
+button{
+    background-color: #ff0000;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 900;
+    margin-top: 15px;
+    margin-left:300px ;
+    border: none;
+}
+button:hover{
+    background-color: white;
+    color: red;
+}
+
+/* main  */
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 16%;
+    margin-bottom: 100px;
+}
+.hero1{
+    font-weight: 900;
+    width: 50%;
+    color:#ffff37;
+    font-size: 200%;
+    margin-right: 20%;
+}
+.hero2{
+    display: flex;
+    width:fit-content;
+    margin-right: 700px;
+}
+
+/* footer  */
+footer{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+footer div img{
+    width: 30%;
+    float: right;
+}
+
+
+
+

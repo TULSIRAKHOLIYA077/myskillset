@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+div{
+    background-color:rgba(240, 255, 255, 0.781);
+    width: 500px;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.4) ;
+    border-radius: 8px;
+    padding:0 0 20px 45px ;
+    margin: 20px 0 20px 0;
+}
+form h1{
+    width: fit-content;
+    font-weight: 500;
+    margin: 20px 0 0 150px;
+}
+form p span {
+    background-color:#53ff53;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50%;
+    margin-right:10px ;
+}
+form p{
+    font-size: 20px;
+    margin: 30px 0 10px 0;
+}
+#name{
+    background-color:#e4e4e4;
+    border: none;
+    padding: 14px 120px;
+    border-radius: 6px;
+    margin: 10px 0 20px 0;
+}
+#email{
+    background-color:#e4e4e4;
+    border: none;
+    padding: 14px 120px;
+    border-radius: 6px;
+    margin: 10px 0 20px 0;
+}
+#password{
+    background-color:#e4e4e4;
+    border: none;
+    padding: 14px 120px;
+    border-radius: 6px;
+    margin: 10px 0 20px 0;
+}
+#age-under-13{
+    margin-top: 10px;
+}
+#image-input{
+    background-color:#e4e4e4;
+    border: none;
+    padding: 16px 57px;
+    border-radius: 6px;
+    margin: 10px 0 20px 0;
+}
+#bio{
+    background-color:#e4e4e4;
+    border: none;
+    padding: 16px 128px;
+    border-radius: 6px;
+    margin: 10px 0 20px 0;
+}
+select{
+    background-color:#e4e4e4;
+    border: none;
+    padding: 8px 223px 8px 0;
+    border-radius: 6px;
+    margin: 10px 0 20px 0;
+}
+#development{
+    margin-top: 10px;
+}
+button{
+    background-color: #53ff53;
+    border: none;
+    padding: 18px 170px ;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
