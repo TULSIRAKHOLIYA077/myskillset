@@ -262,10 +262,10 @@ main p{
 /* footer  */
 footer{
     margin: 35px 60px 0 60px;
-    padding-left: 7px;
+    padding-left: 4px;
 }
 footer img{
-    width: 221px;
+    width: 220px;
     height: 150px;
     margin:0 20px 20px 0 ;
 }
