@@ -671,6 +671,9 @@ tr td{
 }
 
 /* footer  */
+footer{
+    height: fit-content;
+}
 .foot{
 display: flex;
 position: relative;
