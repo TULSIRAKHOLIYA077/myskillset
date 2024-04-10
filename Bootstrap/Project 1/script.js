@@ -39,17 +39,32 @@ function funColors(color){
     const cols = document.querySelectorAll('.character-center .characters');
     const allI = document.querySelectorAll('.character-center .characters i');
     const allA = document.querySelectorAll('.character-center .characters a');
-    const breakerLine = document.querySelector('.breakerline');
-    const breaker = document.querySelector('.breaker');
+    const breakerLine = document.querySelectorAll('.breakerline');
+    const breaker = document.querySelectorAll('.breaker');
     const company = document.querySelector('.company');
-
-
+    const lists = document.querySelectorAll('.compliment li a');
+    const btnRight = document.querySelectorAll('.btn-right');
+    const cartBtn = document.querySelector('.cart-btn');
+    const recentPostsInfo = document.querySelectorAll('.recent-posts-info a');
+    const twitter = document.querySelectorAll('.twitter-info .logo a');
 
     header.style.backgroundColor = color;
     home.style.backgroundColor = color;
     aboutPage.style.backgroundColor = color;
-    breakerLine.style.color = color;
-    breaker.style.backgroundColor = color;
+    cartBtn.style.backgroundColor = color;
+    cartBtn.addEventListener('mouseenter',()=>{
+        cartBtn.style.backgroundColor = '#5E5E5E';
+    });
+    cartBtn.addEventListener('mouseleave',()=>{
+        cartBtn.style.backgroundColor = color;
+    });
+
+    breakerLine.forEach(ele=>{
+        ele.style.color = color;
+    })
+    breaker.forEach(ele=>{
+        ele.style.backgroundColor = color;
+    })
     company.style.color = color;
 
 
@@ -114,6 +129,49 @@ function funColors(color){
         home.style.backgroundColor = color;
         });
     });
+
+    lists.forEach(list=>{
+        list.addEventListener('mouseenter',()=>{
+            list.style.color = color;
+        })
+    })
+    lists.forEach(list=>{
+        list.addEventListener('mouseleave',()=>{
+            list.style.color = '#5E5E5E';
+        })
+    })
+
+    btnRight.forEach(btn=>{
+        btn.style.backgroundColor = color;
+        btn.addEventListener('mouseenter',()=>{
+            btn.style.backgroundColor = '#555555';
+        });
+        btn.addEventListener('mouseleave',()=>{
+            btn.style.backgroundColor = color;
+        })
+    })
+
+    recentPostsInfo.forEach(aTag=>{
+        aTag.addEventListener('mouseenter',()=>{
+            aTag.style.color = color;
+        })
+    })
+    recentPostsInfo.forEach(aTag=>{
+        aTag.addEventListener('mouseleave',()=>{
+            aTag.style.color = '#ffffff';
+        })
+    })
+
+    twitter.forEach(aTag=>{
+        aTag.addEventListener('mouseenter',()=>{
+            aTag.style.color = color;
+        })
+    })
+    twitter.forEach(aTag=>{
+        aTag.addEventListener('mouseleave',()=>{
+            aTag.style.color = '#ffffff';
+        })
+    })
 
 }
 
@@ -291,6 +349,5 @@ dot3.addEventListener('click',()=>{
     dot2.style.backgroundColor = "transparent";
     dot3.style.backgroundColor = "white";
 })
-
 
 

@@ -287,8 +287,8 @@
     text-decoration: none;
     color:#727CB6;
 }
-.character-bottom h5{
-    color: #555555;
+.character-bottom h4{
+    color: #555570;
     font-weight: normal;
     letter-spacing:0.5px;
 }
@@ -396,6 +396,352 @@
 .dot1{
     background-color: white;
 }
+
+/* section :- compliment  */
+.compliment h4{
+    color:#555570;
+    font-weight: normal;
+    line-height: 6px;
+}
+.compliment .breakerline{
+    display: flex;
+    align-items: center;
+    color:#727CB6;
+}
+.compliment .breaker{
+    width: 70px;
+    height: 3px;
+    margin-top: 3px;
+    background-color:#727CB6;
+}
+.compliment .longline{
+    width: 1100px;
+    height: 1px;
+    margin-top: 3px;
+    background-color:#E2E2E2;
+}
+.compliment p{
+    font-size: 14px;
+    color:#5E5E5E;
+}
+.compliment ul{
+    list-style: none;
+    padding-left: 0;
+}
+.compliment ul li::before{
+    content: "\f105";
+    font-family:FontAwesome;
+    padding-right :5px ;
+    font-size: 10px;
+    background-color:#555555;
+    border-radius: 50%;
+    padding: 3px 5px;
+    margin-right: 5px;
+    color: white;
+}
+.compliment ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color:#5E5E5E;
+}
+.compliment ul li a:hover{
+    color:#727CB6;
+}
+.client-bg{
+    background-color: #F8F8F8;
+    margin-bottom: 10px;
+}
+.btn-left{
+    background-color:#555555;
+    margin-right:2px;
+    color: white;
+}
+.btn-left:hover{
+    cursor: default;
+    color:white;
+    background-color:#555555;
+}
+.btn-right{
+    background-color:#727CB6;
+    color: #F8F8F8;
+    font-weight: bold;
+}
+.client-bg:hover .btn-right{
+    background-color:#555555;
+    color: white;
+}
+.css1{
+    width: 20vw;
+    white-space: nowrap;
+    text-align: left;
+}
+.css2{
+    width: 30vw;
+    white-space: nowrap;
+    text-align: left;
+}
+.css3{
+    width: 35vw;
+    white-space: nowrap;
+    text-align: left;
+}
+
+/* section:- team  */
+.team-head h4{
+    color:#555570;
+    font-weight: normal;
+    line-height: 6px;
+}
+.breakerline{
+    display: flex;
+    align-items: center;
+    color:#727CB6;
+}
+.breaker{
+    width: 35px;
+    height: 3px;
+    margin-top: 3px;
+    background-color:#727CB6;
+}
+.longline{
+    width: 1100px;
+    height: 1px;
+    margin-top: 3px;
+    background-color:#E2E2E2;
+}
+.member-img-bg{
+    position: relative;
+}
+.member-img-bg img{
+    width: 100%;
+}
+.team-member{
+    position: relative;
+    border:1px solid #F2F2F2;
+    padding: 0;
+    margin: 0;
+}
+.team-member:hover .member-img-bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(255, 255, 255, 0.493), rgb(255, 255, 255,0.493));
+    z-index: 1;
+}
+.member-links{
+    position: absolute;
+    top:45%;
+    left: 26%;
+}
+.member-links i{
+    display: none;
+}
+.team-member:hover .member-links i{
+    position: relative;
+    background-color:#363636;
+    color:#FFFFFF;
+    border-radius: 50%;
+    margin-right:7px;
+    cursor: pointer;
+    z-index: 3;
+    display: inline;
+}
+.member-links a{
+    text-decoration: none;
+}
+.member-links a:nth-child(1) i{
+    padding: 10px 13px;
+}
+.member-links a:nth-child(1) i:hover{
+    background-color:#2F5A9A;
+}
+.member-links a:nth-child(2) i{
+    padding: 10px 11px;
+}
+.member-links a:nth-child(2) i:hover{
+    background-color:#3ABDD1;
+}
+.member-links a:nth-child(3) i{
+    padding: 10px;
+}
+.member-links a:nth-child(3) i:hover{
+    background-color:#E72828;
+}
+.team-member-info{
+    padding:15px;
+}
+.sub-info{
+    display: flex;
+    justify-content: space-between;
+}
+.sub-info h5{
+    color:#66667A;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sub-info p{
+    font-size: 12px;
+    color:#777789;
+    font-weight: bold;
+}
+.info-about-member{
+    font-size: 14px;
+    color:#666666;
+}
+
+/* section :- clients  */
+.clients h4{
+    color:#555570;
+    font-weight: normal;
+    line-height: 6px;
+}
+.client img{
+    cursor: pointer;
+    margin-right: 120px;
+}
+
+/* section :- sub-footer  */
+.sub-footer{
+    background-color:#F2F2F2;
+}
+.sub-footer .row{
+    padding: 25px 0 10px 0 ;
+}
+.sub-footer-left h4{
+    color:#444444;
+    font-weight: bold;
+}
+.sub-footer-left p{
+    font-size: 13px;
+    color:#5E5E5E;
+}
+.sub-footer-right button{
+    background-color:#727CB6;
+    border: none;
+    padding: 10px 12px;
+    font-size: 20px;
+    cursor:pointer;
+}
+.sub-footer-right button:hover{
+    background-color:#5E5E5E;
+}
+.sub-footer-right button i{
+    margin-right: 10px;
+}
+.sub-footer-right button a{
+    text-decoration: none;
+    color:white;
+}
+
+/* section :- footer-center  */
+.footer-center{
+    background-color:#323A45;
+    padding: 40px 0;
+}
+.footer-center .longline{
+    position: relative;
+    width:100%;
+}
+.footer-center-head{
+    color:#ffffff;
+    margin: 0;
+}
+.footer-center-info{
+    margin-top: 15px;
+}
+.about-us-info{
+    color:#ffffff;
+}
+address{
+    margin-top: 10px;
+}
+address .info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+address .info i,p{
+    color:#ffffff;
+    font-size: 14px;
+    margin: 0;
+}
+address .info p span{
+    font-weight:700;
+    margin-right: 10px;
+}
+.recent-posts-info i{
+    margin-right: 10px;
+}
+.recent-posts-info a{
+    color:#ffffff;
+    text-decoration: none;
+    font-weight:700;
+    cursor: pointer;
+}
+.recent-posts-info a:hover{
+    color:#727CB6;
+}
+.recent-posts-info a span{
+    font-weight: normal;
+    font-size: 12px;
+    color:#919191;
+}
+.twitter-info{
+    margin-bottom: 10px;
+}
+.twitter-info i {
+    margin-right: 10px;
+}
+.twitter-info .logo a{
+    text-decoration: none;
+    font-weight:700;
+    color:#ffffff;
+    cursor: pointer;
+}
+.twitter-info .logo a:hover{
+    color:#727CB6;
+}
+.twitter-info span:nth-child(4){
+    font-size: 12px;
+    color:#919191;
+    margin-top: 10px;
+}
+
+/* section :- footer  */
+footer{
+    background-color:#292F38;
+    height:80px;
+}
+footer .container{
+    height: 80px;
+}
+footer .row{
+    height: 80px;
+}
+footer .footer-info{
+    color: #666666;
+}
+footer .footer-info span a{
+    color: #ffffff;
+    text-decoration: none;
+}
+footer .footer-info span a:hover{
+    color: #666666;
+}
+footer .footer-info-pera{
+    font-size: 13px;
+}
+footer .footer-info-icon{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+
+
 
 
 
@@ -507,8 +853,37 @@
         transition:0.90s ease;
     }
 
-    
+    /* section :- compliment  */
+    .css1{
+        width: 40vw;
+        white-space: nowrap;
+        text-align: left;
+    }
+    .css2{
+        width: 50vw;
+        white-space: nowrap;
+        text-align: left;
+    }
+    .css3{
+        width: 60vw;
+        white-space: nowrap;
+        text-align: left;
+    }
 
+    /* section:- team  */
+    .member-links{
+        left:33%;
+    }
+
+    /* section :- clients  */
+    .client{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .client img{
+        margin:0;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:767px){
@@ -607,6 +982,39 @@
         transition:0.90s ease;
     }
 
+    /* section :- compliment  */
+    .css1{
+        width: 45vw;
+        white-space: nowrap;
+        text-align: left;
+    }
+    .css2{
+        width: 55vw;
+        white-space: nowrap;
+        text-align: left;
+    }
+    .css3{
+        width: 60vw;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+    /* section:- team  */
+    .member-links{
+        left:38%;
+    }
+
+    /* section :- clients  */
+    .client{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .client img{
+        margin:0;
+    }
+    
+
 }
 @media screen and (min-width:768px) and (max-width:991px){
     .mail{
@@ -664,6 +1072,29 @@
     .character-bottom img{
         width: 32.5%;
     }
+
+    /* section :- compliment  */
+    .css1{
+        width: 40vw;
+        white-space: nowrap;
+        text-align: left;
+    }
+    .css2{
+        width: 50vw;
+        white-space: nowrap;
+        text-align: left;
+    }
+    .css3{
+        width: 60vw;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+    /* section :- clients  */
+    .client img{
+        margin-right:10px;
+    }    
+
 }
 @media screen and (min-width:992px) and (max-width:1199px){
     /* home-page */
@@ -685,7 +1116,41 @@
         width:25%;
     }
 
-    
+    /* section :- compliment  */
+    .css1{
+        width: 50vw;
+        white-space: nowrap;
+        text-align: left;
+    }
+    .css2{
+        width: 60vw;
+        white-space: nowrap;
+        text-align: left;
+    }
+    .css3{
+        width: 70vw;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+    /* section:- team  */
+    .sub-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .member-img-bg img{
+        width: 100%;
+    }
+    .member-links{
+        position: absolute;
+        top:45%;
+        left: 18%;
+    }    
+
+    /* section :- clients  */
+    .client img{
+        margin-right:90px;
+    }    
     
 }
 
@@ -706,7 +1171,5 @@
     
   }
   
-
-
 
 
