@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>User Registration Form</title>
+</head>
+<body>
+    <!-- method : get, post  -->
+    <!-- <form method="post" target="_blank" action="/signup" (things goes whatever we write in action) > -->
+        <form method="get" action="index.html">
+        <fieldset>
+            <legend>User Registration</legend>
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" value="Testing" readonly disabled>
+            <br><br>
+            <label for="email">E-mail : </label>
+            <input type="email" id="email" name="email" placeholder="Write your email id" autofocus>
+            <br><br>
+            <label for="password">Password : </label>
+            <input type="password" id="password" name="password" autofocus>
+            <br><br>
+            <label for="age"> Age : </label>
+            <input type="number" name="" min="0" max="25">
+            <br><br>
+            <!-- value is important otherwise data will be sent as gender on -->
+            Gender :
+            <label for="male">Male :</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female :</label>
+            <input type="radio" id="female" name="gender" value="female" >
+            <br><br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+</body>
+</html>

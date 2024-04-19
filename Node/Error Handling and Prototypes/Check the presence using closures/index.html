@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check the presence using closures</title>
+</head>
+<body>
+    <script>
+        function numberChecker(arr) {
+            return function checkNum(num) {
+                return arr.includes(num);
+            };
+        }
+
+        const checkNumbers = numberChecker([1, 2, 3, 4, 5]);
+        console.log(checkNumbers(3)); 
+        console.log(checkNumbers(8));    
+    </script>
+</body>
+</html>

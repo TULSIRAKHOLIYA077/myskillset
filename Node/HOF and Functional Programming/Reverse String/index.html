@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: fit-content;
+            height: 200px;
+            padding: 40px 20px 20px 20px;
+        }
+        p{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input class="string" type="text" placeholder="Enter a string">
+        <button onclick="funReverseString()">Reverse After 2 Seconds</button>
+        <p class="display"></p>
+    </div>
+
+    <script>
+        function funReverseString(){
+            const input = document.querySelector('.string').value;
+            const pera = document.querySelector('.display');
+                setTimeout(function () {
+                    const reverse = input.split("").reverse().join("");
+                    pera.textContent = 'Reversed String :' + reverse;
+                }, 2000);
+
+
+            }
+        
+    </script>
+    
+</body>
+</html>

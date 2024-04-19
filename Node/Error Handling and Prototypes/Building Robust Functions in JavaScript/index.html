@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Robust Functions in JavaScript</title>
+</head>
+<body>
+    <script>
+        function getPerson(personinfo) {
+        try {
+            if (typeof personinfo !== "object" || !personinfo.name || !personinfo.age) {
+            throw new Error("Invalid parameter type");
+            }
+            return `Name: ${personinfo.name}, Age: ${personinfo.age}`;
+        } catch (error) {   
+            return error.message;
+        }
+        }
+
+        console.log(getPerson({ name: "Mithun", age: 20 }));
+        console.log(getPerson({ name: "Mithun" }));
+        console.log(getPerson(["name", "Mithun"])); 
+    </script>
+    
+</body>
+</html>

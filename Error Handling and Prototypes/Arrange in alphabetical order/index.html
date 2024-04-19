@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrange in alphabetical order</title>
+</head>
+<body>
+    <script>
+        let array = [
+            {
+            book : "Rich Dad Poor Dad",
+            author: "robert",
+            year:2009
+            },
+            {
+            book : "Elcamist",
+            author: "polo coelo",
+            year:2011
+            },
+            {
+            book : "Businessman School",
+            author: "robert",
+            year:2003
+            },
+            {
+            book : "Copy Cat",
+            author: "berk hejes",
+            year:2010
+            },
+            {
+            book : "Pairable",
+            author: "berk hejes",
+            year:2005
+            }
+    
+        ]
+
+        function booksTitle(list,myFun){
+            const catchTitles = list.map(title =>title.book)
+            myFun(catchTitles)
+        }
+        function logTitles(catchTitles){
+            catchTitles.sort();
+            console.log(catchTitles);
+        }
+        booksTitle(array,logTitles);
+
+    </script>
+</body>
+</html>

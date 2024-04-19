@@ -1,0 +1,23 @@
+/* desendent selector */
+main p{
+    color: red;
+}
+
+/* child select  */
+h1>p{
+    color: blue;
+}
+section+p{
+    color: red;
+}
+
+section ~ p{
+    color: violet;
+}
+[target="_blanl"]{
+    color: pink;
+}
+[alt~="PW"]{
+    background-color: black;
+}
+    

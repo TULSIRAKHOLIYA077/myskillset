@@ -1,0 +1,110 @@
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    /* to see color change we have to apply duration  */
+    animation-name: colorchange;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    /* animation ketli var thavu :2,3,4, for always infinite  */
+    /* animation-iteration-count:infinite ; */
+    /* option: reverse , alternate-reverse  */
+    animation-direction: alternate-reverse; 
+    /* animation stops at the last color  */
+    animation-fill-mode: forwards;
+    /* animation stops at the first style  */
+    animation-fill-mode: backwards;
+    animation-fill-mode: both;
+
+    /* whatever mentioned in upper we also can write in short : animation: colorchange 2s linear 2s...... */
+
+}
+#ease{
+    animation-timing-function: ease;
+}
+
+#linear{
+    animation-timing-function: linear;
+}
+
+#ease-in{
+    animation-timing-function: ease-in;
+}
+
+#ease-out{
+    animation-timing-function: ease-out;
+}
+
+/* we have to attech it with div  */
+@keyframes colorchange {
+    from {
+        background-color: rgb(42, 165, 79);
+        top: 0px;
+        left: 0px;
+    }
+    to   {
+        background-color:darkgrey;
+        top: 0px;
+        left: 150px;
+    }
+}
+
+/* we also can move div as other way  */
+@keyframes colorchange{
+    0%{
+        background-color: rgb(52, 165, 42);
+        top: 0px;
+        left: 0px;
+    }
+/* time 25% finish thta transition  */
+    25%{
+        background-color: #808080;
+        top: 0px;
+        left: 200px;
+    }
+    /* time 50% finish thta transition  */
+    50%{
+        background-color: coral;
+        top: 200px;
+        left: 200px;
+    }
+
+    75%{
+        background-color: darkblue;
+        top: 200px;
+        right: 0px;
+    }
+
+    100%{
+        background-color: darkorange;
+        top: 0px;
+        left: 0px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

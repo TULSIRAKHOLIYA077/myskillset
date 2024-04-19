@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Description Class</title>
+</head>
+<body>
+    <script>
+        class Car {
+
+            constructor(c, m, y) {
+                this.company = c;
+                this.model = m;
+                this.year = y;
+            }
+
+            getDescription(){
+                console.log("This is a",this.year, this.company,  this.model );
+            }
+        }
+
+        const c = new Car("Skoda","Rapid", 2022);//
+        console.log(c.getDescription());
+    </script>
+</body>
+</html>

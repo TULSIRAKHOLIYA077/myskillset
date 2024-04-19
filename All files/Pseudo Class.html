@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        /* we also can write .hover:hover{} instead of p:hover  */
+        p:hover{
+            background-color: pink;
+            color: white;
+        }
+        input:focus{
+            background-color: black;
+            color: white;
+            /* through this when we write in input it will become big  */
+            font-size: 25px;
+        }
+        /* only go to link */
+        a:hover{
+            color: #ec07b3;
+        }
+        /* does click  */
+        a:active{
+            color: rgb(0, 132, 255);
+        }
+        /* a:visited{
+            color: #eeca00;
+        } */
+        /* a:first-child{
+            color:chartreuse;
+
+        } */
+        /* we also can use other op.like 1,2,3,even ,5n+1 */
+        a:nth-child(odd){
+            color: chartreuse;
+        }
+
+
+    </style>
+</head>
+<body>
+     <!-- pseudo class  -->
+     <p class="hover">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, sapiente?</p>
+     <input type="text"><br><br>
+     
+     <a href="https://www.google.com/">Google</a> <br><br>
+    
+<!-- first child  and nth-child -->
+    <nav>
+        <a href="https://www.google.com/">Google</a> 
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.google.com/">Google</a> <br><br>
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.google.com/">Google</a> 
+        <a href="https://www.google.com/">Google</a>
+
+
+
+
+
+       </nav>
+
+
+
+
+</body>
+</html>

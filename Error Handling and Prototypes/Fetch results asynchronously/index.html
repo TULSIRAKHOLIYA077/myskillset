@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch results asynchronously</title>
+</head>
+<body>
+    <script>
+        const info = "https://jsonplaceholder.typicode.com/todos/1";
+        async function  dataPromise(){
+            const data = await fetch(info);
+
+            const response = await data.json();
+
+            console.log(response);
+        }
+        dataPromise();
+    </script>
+</body>
+</html>

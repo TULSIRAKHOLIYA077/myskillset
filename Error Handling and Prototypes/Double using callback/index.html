@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double using callback</title>
+</head>
+<body>
+    <script>
+        function doubleIntegers(ary,myFun){
+            const doubleInteger = ary.map(number =>{
+                return myFun(number);
+            })
+            return doubleInteger;
+        }
+        function myFun(number){
+            return number * 2;
+        }
+        console.log(doubleIntegers([1,2,3,4,5],myFun));
+    </script>
+</body>
+</html>

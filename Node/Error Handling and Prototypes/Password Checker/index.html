@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker</title>
+</head>
+<body>
+    <script>
+        class User {
+
+            #password;
+
+            constructor(username, password) {
+                this.username = username;
+                this.#password = password;
+            }
+
+            get passwordGetter(){
+                return this.#password;
+            }
+            set passwordSetter(p){
+                if(p.length > 8 && /[A-Z]/.test(p) && /\d/.test(p)){ 
+                this.#password = p;
+                }
+                
+                else{
+                    console.log(
+                        "Error: Password must be at least 8 characters long and contain at least one number and one uppercase letter.");
+                    }
+            }
+
+            }
+
+            const user = new User("Mithun", "Password123");
+            console.log(user);
+            user.passwordSetter = "pass"; 
+            user.passwordSetter = "Pdasse123"; 
+            console.log(user.passwordGetter);
+
+
+
+    </script>
+</body>
+</html>
