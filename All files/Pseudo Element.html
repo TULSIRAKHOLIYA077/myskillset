@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+     <!-- link is for marker ,go to google > font awesome w3scools > copy link > past here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        p::first-line{
+            color: #8212eb;
+}
+        p::first-letter{
+            color: crimson;
+        }
+        /* there comes contene what we write  */
+        p::after{
+            content: "-Tulsi";
+            color: #808080;
+        }
+        p::before{
+            content: "Tulsi-";
+            color: #808080;
+        }
+        /* it applies when we do thing like select for copy  */
+        p::selection{
+            background-color: #808080;
+            color: white;
+        }
+        li::marker{
+            color: red;
+            font-family: 'fontawesome';
+            /* go to google > font awesome 5 icons  */
+            content:'\f00c' ;
+            transition: 0.4s;
+        }
+        li:hover::marker{
+            color: greenyellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- PSEUDO ELEMENT  -->
+
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus impedit quis sequi ullam omnis voluptas ratione commodi, quam maxime molestiae doloribus et aliquid ducimus officiis saepe voluptates recusandae maiores accusamus fugiat eligendi. Facilis quos ad, at consectetur explicabo blanditiis, assumenda corrupti nostrum nulla voluptatibus possimus qui placeat nobis quis.</P>
+
+    <ul>
+        <li type="disc">Hello</li>
+        <li>World</li>
+        <li>Service</li>
+        <li>Content</li>
+        <li>Skills</li>
+    </ul>
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        /* whenever we use grad we have to use bgc img  */
+        /*
+        linear-gradient :-     body{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./pexels-photo-3748035.jpeg") ;
+        background-repeat: no-repeat; 
+        background-size: cover;
+
+
+        this works only on body if use in on div then we have to give width and height
+    }
+    */
+
+        .grad{
+            height: 500px;
+            /* by doing to top it will aply for second color :to right */
+            background-image: linear-gradient(violet,white);
+            /* background-image:repeating-linear-gradient(to top ,violet,white); */
+
+
+            /* background-image: radial-gradient(circle,violet,white,blue); */
+            /* if we won't give % we cannot see any changes  */
+            /* background-image:repeating-radial-gradient(violet 10%,white 20%,blue 15%);  */
+
+
+            /* background-image: conic-gradient(violet 210deg,white,blue); */
+        }
+    </style>
+</head>
+<body>
+    <!-- Gradients  -->
+    <div class="grad">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Slider</h1>
+    <img src="https://images.pexels.com/photos/1174108/pexels-photo-1174108.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+    <div>
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
+    </div>
+
+    <script>
+        const image = document.querySelector('img');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+        const imageSource = ["https://images.pexels.com/photos/1174108/pexels-photo-1174108.jpeg?auto=compress&cs=tinysrgb&w=600","https://images.pexels.com/photos/4365414/pexels-photo-4365414.jpeg?auto=compress&cs=tinysrgb&w=600","https://images.pexels.com/photos/3722811/pexels-photo-3722811.jpeg?auto=compress&cs=tinysrgb&w=600","https://images.pexels.com/photos/8379314/pexels-photo-8379314.jpeg?auto=compress&cs=tinysrgb&w=600","https://images.pexels.com/photos/4819783/pexels-photo-4819783.jpeg?auto=compress&cs=tinysrgb&w=600"]
+
+        let currentIndex = 0;
+        next.addEventListener('click', () => {
+            currentIndex += 1;
+            if (currentIndex < imageSource.length) {
+                image.src = imageSource[currentIndex];
+            } else {
+                currentIndex = (imageSource.length-1); 
+                image.src = imageSource[currentIndex];
+            }
+        });        
+
+        prev.addEventListener('click', () => {
+            currentIndex -= 1;
+            if (currentIndex > 0) {
+                image.src = imageSource[currentIndex];
+            } else {
+                currentIndex = 0; 
+                image.src = imageSource[currentIndex];
+            }
+        });        
+
+
+
+    </script>
+</body>
+</html>
